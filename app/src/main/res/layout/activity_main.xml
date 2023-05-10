@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/appContainer"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBC6C9"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonSOS"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="234dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="235dp"
+        android:onClick="onButtonSosClick"
+        android:rotation="0"
+        android:rotationX="0"
+        android:shadowRadius="@integer/material_motion_duration_medium_2"
+        android:text="S.O.S"
+        android:textColor="@color/white"
+        android:textSize="100dp"
+        android:background="@drawable/sos_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewStatus"
+        android:layout_width="329dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="45dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="Нажмите на кнопку для передачи Вашего текущего местоположения"
+        android:textAlignment="center"
+        android:textColor="#252323"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSOS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonAddContact"
+        android:layout_width="69dp"
+        android:layout_height="69dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/add_button"
+        android:text="+"
+        android:textAlignment="inherit"
+        android:textColor="@color/grey"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
